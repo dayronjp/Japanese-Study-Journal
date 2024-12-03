@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -26,6 +28,11 @@
 
         <section class="japao">
             <h2>Conheça o Japão</span><img src="https://usagif.com/wp-content/uploads/gifs/japanese-flag-23.gif" alt="Bandeira do Japão"/></h2>
+                <div class="images_japan">
+                    <img src="img/fuji-san.jpg" alt="Monte Fuji">
+                    <img src="img/temple.avif" alt="Templo">
+                    <img src="img/tokyo-night.jpg" alt="Tokyo">
+                </div>
             <p>O Japão é uma nação rica em história e cultura, conhecida por sua beleza natural, tradições milenares e inovações tecnológicas. A história do país remonta a mais de mil anos, com influências que vão desde o budismo até as modernas superstições tecnológicas. Com suas paisagens deslumbrantes, que incluem montanhas majestosas, templos tranquilos e cidades vibrantes como Tóquio e Quioto, o Japão é um destino fascinante para os que buscam uma experiência única. Aprender japonês abre portas para compreender profundamente essa cultura rica, além de facilitar a comunicação com milhões de falantes nativos. Além disso, o japonês é uma língua única, com uma estrutura gramatical fascinante e uma escrita com caracteres kanji, hiragana e katakana. Dominar o idioma pode proporcionar acesso a uma enorme variedade de literatura, filmes, animações e oportunidades profissionais, tornando-se uma habilidade valiosa no mundo globalizado de hoje.</p>
         </section>
         
@@ -33,8 +40,44 @@
             <h3>Eai, você está pronto para começar a aprender japonês? Registre-se agora e inicie sua jornada!</h3>
         </section>
 
-        
+        <section class="tour-section">
+            <h1>Veja quais são os sistemas de escrita</h1>
+            <div class="systems-container">
+                <div class="system" id="hiragana" onmouseover="mostrarExemplo('hiragana')" onmouseout="esconderExemplo('hiragana')">
+                    <h2>Hiragana</h2>
+                </div>
+                <div class="system" id="katakana" onmouseover="mostrarExemplo('katakana')" onmouseout="esconderExemplo('katakana')">
+                    <h2>Katakana</h2>
+                </div>
+                <div class="system" id="kanji" onmouseover="mostrarExemplo('kanji')" onmouseout="esconderExemplo('kanji')">
+                    <h2>Kanji</h2>
+                </div>
+            </div>
+            <div id="exemplo-box" class="exemplo-box">
+            </div>
+        </section>
+    
+        <script src="script.js"></script>
 
-    </main>   
+        <section class="sobre">
+            <h2>Sobre o Diário de Estudo de Japônes</h2>
+            <p>Este diário de estudo foi criado para ajudar os estudantes a aprender japonês de forma fácil e imersiva. Com conteúdo variado e interessante, o diário oferece uma visão geral da língua e da cultura japonesa, além de recursos práticos para ajudar a melhorar a habilidade de comunicação. O objetivo é proporcionar uma experiência de aprendizado agradável e eficaz, tornando -se uma ferramenta valiosa para os que desejam aprender japonês.</p>       
+        </section>
+
+    </main> 
+    <footer>
+        <div class="social_buttons">
+            <a href="https://www.instagram.com/yukinoyume3/">
+                <i class="bi bi-instagram"></i>
+            </a>            
+            <a href="https://github.com/dayronjp" >
+                <i class="bi bi-github"></i>
+            </a>            
+            <a href="https://www.linkedin.com/in/dayron-anjos-566b02323/">
+                <i class="bi bi-linkedin"></i>
+            </a>            
+        </div>
+        <p>Todos os direitos reservados &copy; 2024</p>
+    </footer>
 </body>
 </html>
