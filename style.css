@@ -34,6 +34,18 @@ nav a{
     block-size: 1em; 
     margin-inline-start: 10px; 
 }
+
+.images_japan{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.images_japan img{
+    inline-size: 400px;
+    block-size: auto;
+    border-radius: 15px;
+}
+
 .japao p{
     text-align: center;
     font-family: 'Pacifico', cursive;
@@ -43,7 +55,148 @@ nav a{
 .register{
     text-align: center;
     font-family: 'Pacifico', cursive;
+    padding: 40px;
+}
+
+
+/* Estilo da seção do tour */
+.tour-section {
+    font-family: 'Pacifico', cursive;
+    max-inline-size: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.0);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.tour-section h1 {
+    font-size: 2rem;
+    margin-block-end: 20px;
+    color: black;
+}
+
+/* Estilos para os sistemas */
+.systems-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-block-start: 30px;
+}
+
+.system {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.system:hover {
+    background-color: #ff00006b;
+    color: white;
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Caixa de exemplo */
+.exemplo-box {
+    display: none;
+    margin-block-start: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards ease-in-out;
+}
+
+.exemplo-box h3 {
+    font-size: 1.3rem;
+    color: white;
+    margin-block-end: 10px;
+}
+
+.exemplo-box p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Animação para fade-in na seção */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação para slide-in quando mostrar exemplo */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.sobre{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+.sobre p{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-inline-size: 600px;
+    margin: 0 auto;
 
 }
 
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 20px;
+}
+
+.social_buttons {
+    display: flex; 
+    gap: 15px;
+    justify-content: center; 
+}
+
+.social_buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 50px;
+    block-size: 50px;
+    background-color: #6d6a6a00;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social_buttons a:hover {
+    background-color: #6d6a6a00;
+    transform: scale(1.1);
+}
 
